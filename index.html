@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- link para fazer a ligação com o google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github favoritos</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- fontes de fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!--  -->
+
+
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Github favorites</h1>           
+            <div class="search">
+                <label class="sr-only" for="input-search">Usuário do github</label>
+                <input id="input-search" type="text" placeholder="Usuário do github">
+                <button>&plus;</button>
+            </div>
+        </header>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Usuário</th>
+                    <th>Repositório</th>
+                    <th>Seguidores</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- primeiro dado da tabela (primeira linha)  -->
+                <tr> 
+                    <!-- Referente a coluna usuário do thead  -->
+                    <td class="user">
+                        <img src="https://github.com/alexandredrf.png" alt="Imagem do Alexandre">
+                        <a href="https://github.com/alexandredrf" target="_blank">
+                            <p>Alexandre Davi</p>
+                            <span>alexandredrf</span>
+                        </a>
+                    </td>
+                    <!-- Referente a coluna repositório do thead  -->
+                    <td class="repositories">
+                        50
+                    </td>
+                    <!-- referente aos seguidores  -->
+                    <td class="followers">
+                        16000
+                    </td>
+                    <!-- referente ao botão de fechar  -->
+                    <td>
+                        <button class="remove">&times;</button>
+                    </td>
+                </tr>
+                <tr> 
+                    <!-- Referente a coluna usuário do thead  -->
+                    <td class="user">
+                        <img src="https://github.com/RenanFachin.png" alt="Imagem do Alexandre">
+                        <a href="https://github.com/RenanFachin" target="_blank">
+                            <p>Renan Fachin</p>
+                            <span>RenanFachin</span>
+                        </a>
+                    </td>
+                    <!-- Referente a coluna repositório do thead  -->
+                    <td class="repositories">
+                        50
+                    </td>
+                    <!-- referente aos seguidores  -->
+                    <td class="followers">
+                        16000
+                    </td>
+                    <!-- referente ao botão de fechar  -->
+                    <td>
+                        <button class="remove">&times;</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+</body>
+</html>
